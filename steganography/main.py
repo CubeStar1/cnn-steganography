@@ -19,7 +19,7 @@ if __name__ == "__main__":
         transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
     ])
     
-    image = Image.open('low_res_image.jpg')
+    image = Image.open('test_image.jpg')
     image_tensor = transform(image).unsqueeze(0)
 
     secret_text = "Hello, there!"
